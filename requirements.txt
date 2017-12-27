@@ -1,0 +1,5 @@
+beautifulsoup4==4.6.0
+pyexcel-io==0.5.4
+pyexcel-xls==0.5.4
+PyExecJS==1.5.0
+requests==2.18.4
