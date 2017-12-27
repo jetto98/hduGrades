@@ -14,7 +14,6 @@ def xuke_login(userName,password):
     except Exception:
         print("请求超时")
         sys.exit(1)
-    cookiefile = 'cookies.txt'
     data={
         'encodedService':'http://jxgl.hdu.edu.cn/default.aspx',
         'service':'http://jxgl.hdu.edu.cn/default.aspx',
