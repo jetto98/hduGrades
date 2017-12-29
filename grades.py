@@ -17,9 +17,18 @@ def load_cookies():
     s=requests.session()
     s.cookies = Cookie()			
     s.cookies.load('xkcookies.txt',ignore_discard=True, ignore_expires=True)
+def isnumber(x):
+    x=x.string
+    if x.isdigit():
+        return int(x)
+    try:
+        fx=float(x)
+        return fx
+    except Exception:
+        return x
 def classinfo(html):
-		data=html.find_all('td')
-		return list(map(lambda x:x.string,data))
+    data=html.find_all('td')
+    return list(map(isnumber,data))
 def getGrades(userName,xn,xq):
     global s
     data={
@@ -41,7 +50,8 @@ def getGrades(userName,xn,xq):
     try:    
         for r in bs(r.text).find_all('tr')[4:]:
             grades.append(classinfo(r))
-    except Exception:
+    except Exception as e:
+        print(e)
         print("emmm...挂了")
         sys.exit(1)
 def get_xq_xns(userName):
