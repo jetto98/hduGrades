@@ -30,3 +30,5 @@ def hdu_login(userName,password):
     s.get(bs(r.text).select('a')[0]['href'],headers=headers)
     r=s.get('http://i.hdu.edu.cn/dcp/forward.action?path=/portal/portal&p=wkHomePage',headers=headers)
     s.cookies.save(ignore_discard=True, ignore_expires=True)
+
+hdu_login('15058220','LHL1210HH')

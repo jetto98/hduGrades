@@ -4,19 +4,20 @@ import requests
 from bs4 import BeautifulSoup
 from functools import partial
 bs = partial(BeautifulSoup,features='html.parser')
+baseURL="http://cas.hdu.edu.cn/cas/login"
 def xuke_login(userName,password):
     s = requests.session()
     cookiefile = 'xkcookies.txt'
     s.cookies = Cookie(cookiefile)
-    s.headers['Referer']='http://cas.hdu.edu.cn/cas/login'
+    s.headers['Referer']=baseURL
     try:
-        r = s.get('http://cas.hdu.edu.cn/cas/login',timeout=5)
+        r = s.get(baseURL,timeout=5)
     except Exception:
         print("请求超时")
         sys.exit(1)
     data={
-        'encodedService':'http://jxgl.hdu.edu.cn/default.aspx',
-        'service':'http://jxgl.hdu.edu.cn/default.aspx',
+        'encodedService':'http://jxglteacher.hdu.edu.cn/default.aspx',
+        'service':'http://jxglteacher.hdu.edu.cn/default.aspx',
         'serviceName':'null',
         'loginErrCnt':'0',
         'username':userName,
@@ -24,9 +25,9 @@ def xuke_login(userName,password):
         'lt':bs(r.text).select('input[name="lt"]')[0]['value'],
     }
     try:
-        r=s.post('http://cas.hdu.edu.cn/cas/login',data=data,timeout=1)
+        r=s.post(baseURL,data=data,timeout=1)
         s.get(bs(r.text).select('a')[0]['href'],timeout=1)
-        r=s.get('http://jxgl.hdu.edu.cn/xs_main.aspx?xh=%s' % userName)
+        r=s.get('http://jxglteacher.hdu.edu.cn/xs_main.aspx?xh=%s' % userName)
         s.cookies.save(ignore_discard=True, ignore_expires=True)
     except Exception:
         print("密码错误,请重新登录")

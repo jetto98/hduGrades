@@ -88,3 +88,7 @@ if __name__=="__main__":
         else:
             print("请先登录")
             sys.exit(1)
+paramters = urllib.urlencode({
+						'xh': "123123", 
+						'xm': "吕昊临".decode('utf-8').encode('gbk'),
+						'gnmkdm': 'N121113'})

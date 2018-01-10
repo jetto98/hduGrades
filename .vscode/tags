@@ -1,0 +1,68 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BeautifulSoup	../classSelect.py	/^from bs4 import BeautifulSoup$/;"	kind:namespace	line:4
+BeautifulSoup	../grades.py	/^from bs4 import BeautifulSoup$/;"	kind:namespace	line:6
+BeautifulSoup	../hdu_login.py	/^from bs4 import BeautifulSoup$/;"	kind:namespace	line:4
+BeautifulSoup	../xk_login.py	/^from bs4 import BeautifulSoup$/;"	kind:namespace	line:4
+Cookie	../classSelect.py	/^from http.cookiejar import LWPCookieJar as Cookie$/;"	kind:namespace	line:2
+Cookie	../grades.py	/^from http.cookiejar import LWPCookieJar as Cookie$/;"	kind:namespace	line:4
+Cookie	../hdu_login.py	/^from http.cookiejar import LWPCookieJar as Cookie$/;"	kind:namespace	line:7
+Cookie	../xk_login.py	/^from http.cookiejar import LWPCookieJar as Cookie$/;"	kind:namespace	line:2
+OrderedDict	../grades.py	/^from collections import OrderedDict$/;"	kind:namespace	line:11
+bs	../classSelect.py	/^bs = partial(BeautifulSoup,features='html.parser')$/;"	kind:variable	line:8
+bs	../grades.py	/^bs = partial(BeautifulSoup,features='html.parser')$/;"	kind:variable	line:8
+bs	../hdu_login.py	/^bs = partial(BeautifulSoup,features="html.parser")$/;"	kind:variable	line:8
+bs	../xk_login.py	/^bs = partial(BeautifulSoup,features='html.parser')$/;"	kind:variable	line:6
+classSelect.py	../classSelect.py	1;"	kind:file	line:1
+classinfo	../grades.py	/^def classinfo(html):$/;"	kind:function	line:29
+datetime	../grades.py	/^import datetime$/;"	kind:namespace	line:2
+getGrades	../grades.py	/^def getGrades(userName,xn,xq):$/;"	kind:function	line:32
+get_xq_xns	../grades.py	/^def get_xq_xns(userName):$/;"	kind:function	line:57
+getpass	../xk_login.py	/^import hashlib,sys,getpass$/;"	kind:namespace	line:1
+grades	../grades.py	/^grades=[['学年','学期','课程代码','课程名称','课程性质','课程归属','学分','成绩','补考成绩','是否重修','开课学院','备注','补考备注']]$/;"	kind:variable	line:13
+grades.py	../grades.py	1;"	kind:file	line:1
+hashlib	../grades.py	/^import hashlib,os,sys$/;"	kind:namespace	line:1
+hashlib	../hdu_login.py	/^import hashlib$/;"	kind:namespace	line:5
+hashlib	../xk_login.py	/^import hashlib,sys,getpass$/;"	kind:namespace	line:1
+hdu_login	../hdu_login.py	/^def hdu_login(userName,password):$/;"	kind:function	line:13
+hdu_login.py	../hdu_login.py	1;"	kind:file	line:1
+headers	../hdu_login.py	/^headers = {$/;"	kind:variable	line:10
+info_data	../classSelect.py	/^info_data = None$/;"	kind:variable	line:9
+isnumber	../grades.py	/^def isnumber(x):$/;"	kind:function	line:20
+json	../classSelect.py	/^import json$/;"	kind:namespace	line:6
+loadJson	../classSelect.py	/^def loadJson():$/;"	kind:function	line:10
+load_cookies	../grades.py	/^def load_cookies():$/;"	kind:function	line:15
+os	../grades.py	/^import hashlib,os,sys$/;"	kind:namespace	line:1
+os	../hdu_login.py	/^import os$/;"	kind:namespace	line:2
+params	../classSelect.py	/^    params = parse.urlencode($/;"	kind:variable	line:17
+paramters	../grades.py	/^paramters = urllib.urlencode({$/;"	kind:variable	line:91
+parse	../classSelect.py	/^import urllib.parse as parse$/;"	kind:namespace	line:7
+partial	../classSelect.py	/^from functools import partial$/;"	kind:namespace	line:5
+partial	../grades.py	/^from functools import partial$/;"	kind:namespace	line:7
+partial	../hdu_login.py	/^from functools import partial$/;"	kind:namespace	line:6
+partial	../xk_login.py	/^from functools import partial$/;"	kind:namespace	line:5
+password	../xk_login.py	/^    password=getpass.getpass("数字杭电密码(不显示位数):")$/;"	kind:variable	line:39
+r	../classSelect.py	/^    r=s.get("http:\/\/jxgl.hdu.edu.cn\/xf_xsqxxxk.aspx?%s" % params)$/;"	kind:variable	line:27
+re	../classSelect.py	/^import requests,re$/;"	kind:namespace	line:3
+re	../hdu_login.py	/^import re$/;"	kind:namespace	line:3
+requests	../classSelect.py	/^import requests$/;"	kind:namespace	line:1
+requests	../classSelect.py	/^import requests,re$/;"	kind:namespace	line:3
+requests	../grades.py	/^import requests$/;"	kind:namespace	line:5
+requests	../hdu_login.py	/^import requests$/;"	kind:namespace	line:1
+requests	../xk_login.py	/^import requests$/;"	kind:namespace	line:3
+s	../classSelect.py	/^    s=requests.session()$/;"	kind:variable	line:23
+s	../grades.py	/^s=None$/;"	kind:variable	line:14
+save_data	../grades.py	/^from pyexcel_xls import save_data$/;"	kind:namespace	line:10
+save_to_xls	../grades.py	/^def save_to_xls():$/;"	kind:function	line:70
+sys	../grades.py	/^import hashlib,os,sys$/;"	kind:namespace	line:1
+sys	../xk_login.py	/^import hashlib,sys,getpass$/;"	kind:namespace	line:1
+time	../hdu_login.py	/^import time$/;"	kind:namespace	line:9
+urllib	../classSelect.py	/^import urllib.parse as parse$/;"	kind:namespace	line:7
+userName	../grades.py	/^        userName=f.read()$/;"	kind:variable	line:81
+userName	../xk_login.py	/^    userName=input("数字杭电账号:")$/;"	kind:variable	line:38
+xk_login.py	../xk_login.py	1;"	kind:file	line:1
+xuke_login	../xk_login.py	/^def xuke_login(userName,password):$/;"	kind:function	line:7

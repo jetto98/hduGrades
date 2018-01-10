@@ -1,0 +1,6 @@
+#LWP-Cookies-2.0
+Set-Cookie3: key_dcp_cas="1XDlhPRdLGqmyjM1Y3tVyv82lFhC0DmKyGjWcJZZRkCbGzMzZwyG!-1218671341"; path="/"; domain="cas.hdu.edu.cn"; path_spec; discard; HttpOnly=None; version=0
+Set-Cookie3: route=c4983b7b52b1d14e475c56063c71cbb3; path="/"; domain="cas.hdu.edu.cn"; path_spec; discard; version=0
+Set-Cookie3: CASTGC="TGC-7107085-QRjg3QwdqQ3aUOetu8zxQxPqH72vyb3mcwhEos46tpQrDZ8Eri"; path="/cas"; domain="cas.hdu.edu.cn"; path_spec; discard; version=0
+Set-Cookie3: key_dcp_v5="Jd5whPRdTy0fFTknh7Rw3h3PRXQPxv3gTSfnB1JJ5hrdJ03zHkn3!-197931526"; path="/"; domain="i.hdu.edu.cn"; path_spec; discard; HttpOnly=None; version=0
+Set-Cookie3: route=334c8b8d255e25bfc9af413879314a29; path="/"; domain="i.hdu.edu.cn"; path_spec; discard; version=0
